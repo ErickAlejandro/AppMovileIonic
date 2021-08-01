@@ -7,22 +7,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <br>
   <ion-grid>
     <ion-row>
       <ion-col>
         <ion-item>
-          <ion-input placeholder ="Enter key" [(ngModel)]="key"></ion-input>
+          <ion-input placeholder ="Ingresar ID" [(ngModel)]="key"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
         <ion-item>
-          <ion-input placeholder ="Enter value" [(ngModel)]="value"></ion-input>
+          <ion-input placeholder ="Ingresar el Valor" [(ngModel)]="value"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col></ion-col>
-      <ion-col><ion-button expand="full" (click)="saveStorage()">Guardar</ion-button></ion-col>
+      <ion-col><ion-button color="success" expand="full" (click)="saveStorage()">Guardar</ion-button></ion-col>
       <ion-col></ion-col>
     </ion-row>
   </ion-grid>
@@ -31,13 +32,16 @@
     <ion-row>
       <ion-col>
         <ion-item>
-          <ion-input [(ngModel)]="key" placeholder="Enter Key"></ion-input>
+          <ion-input [(ngModel)]="key" placeholder="Buscar informacion de Llave"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col><ion-button expand="full" (click)="getStorage()">Obtener</ion-button></ion-col>
-      <ion-col><ion-button expand="full" (click)="removeStorage()">Remover</ion-button></ion-col>
+      <ion-col><ion-button expand="full" color="warning" (click)="getStorage()">Obtener</ion-button></ion-col>
+      <ion-col><ion-button expand="full" color="danger" (click)="removeStorage()">Remover</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <img src="https://img.wattpad.com/8719c98c9034b3a6f7474a214a8deb0ee149fca2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f767154326b4d6953316a676e45773d3d2d3236363138363036302e313435353066336263313233383633382e6a7067" class="rounded" alt="">
     </ion-row>
   </ion-grid>
 </ion-content>
